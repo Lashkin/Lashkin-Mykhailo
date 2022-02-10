@@ -8,8 +8,8 @@ namespace Homework1._3.b
         {
             SomeVal v1, v2;
             Swap(out v1, out v2);
-            Console.WriteLine(v1.x);
-            Console.WriteLine(v2.x);
+            Console.WriteLine("A {0}", v1.x);
+            Console.WriteLine("B {0}", v2.x);
         }
 
         private static void Swap(out SomeVal v1, out SomeVal v2)
