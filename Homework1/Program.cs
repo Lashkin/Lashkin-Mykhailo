@@ -1,0 +1,78 @@
+﻿string myName = "Михаил";
+string mySurname = "Лашкин";
+byte myAge = 25;
+byte newAge = 40;
+Console.WriteLine((myName + " " + mySurname) + ", " + "лет до новой жизни" + " " + (newAge - myAge));
+
+bool a = false;
+bool b = false;
+Console.WriteLine("При А=0 В=0");
+bool logicalAnd = a && b;
+Console.WriteLine(logicalAnd);
+bool logicalOr = a || b;
+Console.WriteLine(logicalOr);
+bool logicalNegationAnd = !(a && b);
+Console.WriteLine(logicalNegationAnd);
+bool logicalNegationOr = !(a || b);
+Console.WriteLine(logicalNegationOr);
+bool logicalXor = a ^ b;
+Console.WriteLine(logicalXor);
+
+bool a0 = false;
+bool b1 = true;
+Console.WriteLine("При А=0 В=1");
+bool logicalAnd_a0b1 = a0 && b1;
+Console.WriteLine(logicalAnd_a0b1);
+bool logicalOr_a0b1 = a0 || b1;
+Console.WriteLine(logicalOr_a0b1);
+bool logicalNegationAnd_a0b1 = !(a0 && b1);
+Console.WriteLine(logicalNegationAnd_a0b1);
+bool logicalNegationOr_a0b1 = !(a0 || b1);
+Console.WriteLine(logicalNegationOr_a0b1);
+bool logicalXor_a0b1 = a0 ^ b1;
+Console.WriteLine(logicalXor_a0b1);
+
+bool a1 = true;
+bool b0 = false;
+Console.WriteLine("При А=1 В=0");
+bool logicalAnd_a1b0 = a1 && b0;
+Console.WriteLine(logicalAnd_a1b0);
+bool logicalOr_a1b0 = a1 || b0;
+Console.WriteLine(logicalOr_a1b0);
+bool logicalNegationAnd_a1b0 = !(a1 && b0);
+Console.WriteLine(logicalNegationAnd_a1b0);
+bool logicalNegationOr_a1b0 = !(a1 || b0);
+Console.WriteLine(logicalNegationOr_a1b0);
+bool logicalXor_a1b0 = a1 ^ b0;
+Console.WriteLine(logicalXor_a1b0);
+
+Console.WriteLine("При А=1 В=1");
+bool logicalAnd_a1b1 = a1 && b1;
+Console.WriteLine(logicalAnd_a1b1);
+bool logicalOr_a1b1 = a1 || b1;
+Console.WriteLine(logicalOr_a1b1);
+bool logicalNegationAnd_a1b1 = !(a1 && b1);
+Console.WriteLine(logicalNegationAnd_a1b1);
+bool logicalNegationOr_a1b1 = !(a1 || b1);
+Console.WriteLine(logicalNegationOr_a1b1);
+bool logicalXor_a1b1 = a1 ^ b1;
+Console.WriteLine(logicalXor_a1b1);
+
+Console.WriteLine("При Х=3");
+int x = 3;
+var firstEquation = Math.Pow(4 * x, 2) + (69 * x) - 7;
+var secondEquation = (3 * x) - 4 - (2 / x);
+var thirdEquation = Math.Pow(-16 * x, 2) + (8 * x) - 27;
+Console.WriteLine(firstEquation);
+Console.WriteLine(secondEquation);
+Console.WriteLine(thirdEquation);
+
+Console.WriteLine("Введите значение X: ");
+int newX = Convert.ToInt32(Console.ReadLine());
+var new_firstEquation = Math.Pow(4 * newX, 2) + (69 * newX) - 7;
+var new_secondEquation = (3 * newX) - 4 - (2 / newX);
+var new_thirdEquation = Math.Pow(-16 * newX, 2) + (8 * newX) - 27;
+Console.WriteLine($"При X={newX}");
+Console.WriteLine(new_firstEquation);
+Console.WriteLine(new_secondEquation);
+Console.WriteLine(new_thirdEquation);
